@@ -1,0 +1,8 @@
+import random
+sides = int(input('How many sides does the die have? '))
+
+for each in range(sides):
+	random_integer = random.randint(1, sides)
+	if random_integer==3:
+		print('Success.You rolled a {}'.format(random_integer))
+		break
